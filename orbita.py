@@ -1,7 +1,4 @@
-
-import numpy as np
 import matplotlib.pyplot as plt
-from scipy.integrate import odeint
 
 # Definição do sistema dinâmico
 def competitive_system(X, t):
@@ -47,6 +44,6 @@ plt.title("Diagrama de Fase do Sistema Competitivo")
 plt.legend()
 plt.grid()
 plt.show()
-import sys
-print(sys.executable)
-print("Python está funcionando no VS Code!")
+# Salvar o gráfico como uma imagem
+plt.savefig("Phase Space.png")
+plt.close()
